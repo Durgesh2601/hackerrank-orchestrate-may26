@@ -1,0 +1,22 @@
+# Pinned dependencies for the support triage agent.
+# Keep this lean — every dep is justified.
+
+# CSV / data — stdlib only (csv, json, pathlib)
+
+# YAML frontmatter parsing in markdown corpus
+PyYAML==6.0.2
+
+# BM25 retrieval (deterministic, no external service)
+rank-bm25==0.2.2
+
+# Tokenization for BM25 (stems + stopwords give a small but consistent boost)
+nltk==3.9.1
+
+# Groq SDK (OpenAI-compatible). Installed via groq's official client.
+groq==0.13.0
+
+# Load .env into os.environ
+python-dotenv==1.0.1
+
+# Pretty progress bar for the CLI
+tqdm==4.66.5
